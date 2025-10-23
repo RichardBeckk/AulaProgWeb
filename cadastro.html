@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Voluntarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <nav>
+             <div class="logo">&#128153; Voluntários Do Bem</div>
+                 <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                 <ul id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="projeto">Projetos</a></li>
+                    <li><a href="cadastro.html">Cadastros</a></li>
+                </ul>
+            </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero hero-cadastro">
+        <div class="hero-content">
+            <h1>Transforme Vidas com Voluntariado</h1>
+            <p>Somos uma organização dedicada à inclusão social e ao atendimento de famílias. Junte-se a nós e faça a diferença!</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="signup-section">
+         <p><h2>Formulário de Cadastro de Voluntários</h2></p>       
+              <form id="VolunteerForm" OnSubmit="HandleSubmit(event)">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome Completo*</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="idade">Idade*</label>
+                        <input type="number" name="idade" id="idade" min="18" max="80" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div>
+                        <label for="cpf">CPF:</label> 
+                        <input type="text" name="cpf" id="cpf"  placeholder="000.000.000-00" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Celular:</label>
+                        <input type="tel" name="telefone" id="telefone"  placeholder="(00)00000-0000" required>
+                    </div>
+
+                    <div>
+                        <label for="CEP">CEP:</label>
+                        <input type="text" name="CEP" id="CEP"  placeholder="00000-000" required>
+                    </div>
+
+                    <div>
+                        <label for="endereço">Endereço:</label>
+                        <input type="text" name="endereço" id="endereço" required>
+                    </div>
+
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" required>
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado" required>
+                    </div>
+
+                    <div>
+                        <label for="país">País</label>
+                        <input type="text" name="país" id="país" required>
+                    </div>
+                </fieldset>
+
+                    <fieldset>
+                        <legend>Gênero</legend>
+                    <div>
+                        <label for="idradio1">Masculino</label>
+                        <input type="radio" name="idradio" id="idradio1" value="Masculino">
+
+                        <label for="idradio2">Feminino</label>
+                        <input type="radio" name="idradio" id="idradio2" value="Feminino">
+
+                        <label for="idradio3">Outro</label>
+                        <input type="radio" name="idradio" id="idradio3" value="Outro">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Disponibilidade</legend>
+                    <div class="form-group">
+                        <label for="disponibilidade">Quando você pode atuar como voluntario?</label>
+                        <select id="disponibilidade" name="disponibilidade" required>
+                           <option value="">Selecione...</option>
+                           <option value="finais-de-semana">Finais de Semana</option>
+                           <option value="dias-uteis">Dias Úteis</option>
+                           <option value="flexivel">Flexíveis</option>
+                           <option value="feriados">Feriados</option> 
+                        </select>
+                    </div>
+                </fieldset>
+
+                    <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+        <footer>
+            <p>&copy; 2025 organização de voluntarios. Todos os direitos reservados!</p>
+            <p>Feito com &#10084;&#65039; para transformar vidas</p>
+        </footer>
+        <script src="script.js"></script>  
+</body>
+</html>
