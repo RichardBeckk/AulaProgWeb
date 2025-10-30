@@ -10,11 +10,11 @@
 <body>
     <header>
             <nav>
-             <div class="logo">&#128153; Voluntários Do Bem</div>
+             <div class="logo">🤝 Mão Amiga</div>
                  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
                  <ul id="navMenu">
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="projeto">Projetos</a></li>
+                    <li><a href="projeto.html">Projetos</a></li>
                     <li><a href="cadastro.html">Cadastros</a></li>
                 </ul>
             </nav>
@@ -44,12 +44,12 @@
                         <input type="number" name="idade" id="idade" min="18" max="80" required>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="email">E-mail:</label>
                         <input type="email" name="email" id="email" required>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="cpf">CPF:</label> 
                         <input type="text" name="cpf" id="cpf"  placeholder="000.000.000-00" required>
                     </div>
@@ -59,29 +59,29 @@
                         <input type="tel" name="telefone" id="telefone"  placeholder="(00)00000-0000" required>
                     </div>
 
-                    <div>
-                        <label for="CEP">CEP:</label>
-                        <input type="text" name="CEP" id="CEP"  placeholder="00000-000" required>
+                    <div class="form-group">
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep"  placeholder="00000-000" required>
                     </div>
 
-                    <div>
-                        <label for="endereço">Endereço:</label>
-                        <input type="text" name="endereço" id="endereço" required>
+                    <div class="form-group">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" name="endereco" id="endereco" required>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="cidade">Cidade:</label>
                         <input type="text" name="cidade" id="cidade" required>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="estado">Estado:</label>
                         <input type="text" name="estado" id="estado" required>
                     </div>
 
-                    <div>
-                        <label for="país">País</label>
-                        <input type="text" name="país" id="país" required>
+                    <div class="form-group">
+                        <label for="pais">País</label>
+                        <input type="text" name="pais" id="pais" required>
                     </div>
                 </fieldset>
 
@@ -112,9 +112,23 @@
                         </select>
                     </div>
                 </fieldset>
+                <legend>Informações Adicionais</legend>
+                    <div class="form-group">
+                        <label for="experiencia">Você já participou de ações voluntárias antes?</label>
+                        <textarea id="experiencia" name="experiencia" placeholder="Conte-nos sobre sua experiência..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivacao">Por que você quer ser voluntário?</label>
+                        <textarea id="motivacao" name="motivacao" placeholder="Compartilhe sua motivação..."></textarea>
 
-                    <input type="submit" value="Enviar">
+                    <input type="submit" class="btn-primary" value="Enviar Cadastro">
             </form>
+        </section>
+            <section class="voluntarios-lista">
+                <h2>Voluntários Cadastrados</h2>
+            <div id="tabelaVoluntarios">                   
+            </div>
+            <button onclick="limparTabela()">Limpar Tabela</button>
         </section>
     </main>
         <footer>
