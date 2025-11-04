@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
-    <title>Organização de Voluntariado</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organização de Voluntariado | Mão Amiga</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-           <div class="logo">&#128153; Voluntários Do Bem</div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-            <ul id="navMenu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projeto.html">Projeto Voluntariado</a></li>
-                <li><a href="cadastro.html">Cadastro de Voluntariado</a></li>
-            </ul>
-        </nav>
-        <h1>Conheça nossa organização</h1>
-    </header>
+  <header>
+    <nav class="navbar" aria-label="Menu principal">
+      <div class="logo" aria-label="Logotipo">🤝 Mão Amiga</div>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="projeto.html">Projeto Voluntariado</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>Quem Somos?</h2>
-            <p>Somos uma organização sem fins lucrativos baseada na fraternidade e empatia, que atua em prol do bem estar da comunidade e familias em inclusão social.</p>
-            <img src="imagemong.jpg" alt="Faça uma criança sorrir!">
-        </section>
-        <section>
-            <h3>Fale Conosco!</h3>
-            <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
-            <address>
-                <p>Endereço Rodovia José Carlos Daux, 1500 - Bairro: Jurere - Cidade: Florianópolis/SC</p>
-                <p>Celular: (99)99999-9999</p>
-                <p>Email: contato@voluntariado.org.com</p>
-            </address>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 organização de voluntarios. Todos os direitos reservados!</p>
+  <main>
+    <section class="hero">
+      <img src="imagemong.jpg" alt="Voluntários ajudando uma criança a sorrir">
+    </section>
 
-    </footer>
+    <section class="about">
+      <h2>Quem Somos</h2>
+      <p>
+        Somos uma organização sem fins lucrativos baseada na fraternidade e empatia, que atua em prol do bem-estar da comunidade e de famílias em processo de inclusão social.
+      </p>
+    </section>
 
+    <section class="contact">
+      <h3>Fale Conosco</h3>
+      <address>
+        <p>📍 Rodovia José Carlos Daux, 1500 - Jurerê, Florianópolis/SC</p>
+        <p>📱 (99) 99999-9999</p>
+        <p>📧 contato@voluntariado.org.com</p>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <section>
+      <a href="cadastro.html" class="btn-primary">Quero Ser Voluntário</a>
+    </section>
+    <p>&copy; 2025 Organização de Voluntários. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

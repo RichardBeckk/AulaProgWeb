@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Voluntariado</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Voluntariado | Mão Amiga</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-           <div class="logo">🤝 Mão Amiga</div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-            <ul id="navMenu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projeto.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastros</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar" aria-label="Menu principal">
+      <div class="logo">🤝 Mão Amiga</div>
+      <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html" class="active">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Conheça Nossos Projetos</h1>
-                <p>Descubra como nossas ações transformam vidas e como nos ajudar</p>
-            </div>
-        </section>
+  <main>
+    <section class="hero hero-projeto">
+      <div class="hero-content">
+        <h1>Conheça Nossos Projetos</h1>
+        <p>Descubra como nossas ações transformam vidas e como você pode ajudar.</p>
+      </div>
+    </section>
 
-        <section class="about">
-            <h2>Como Funciona:</h2>
-            
-            <p> A ONG Mãos Solidárias desenvolve um projeto voltado ao apoio de famílias em situação de vulnerabilidade social. 
-                A iniciativa oferece doações de alimentos, roupas e materiais de higiene, além de promover cursos profissionalizantes 
-                e atividades educativas que incentivam a autonomia e a inclusão social. Por meio de parcerias com empresas e voluntários, 
-                o projeto busca não apenas suprir necessidades básicas, mas também proporcionar oportunidades para que as famílias possam reconstruir suas vidas 
-                com dignidade e esperança. </p>
-            <img src="preto-e-branco-maos-humanas-no-aperto-de-mao_101731-220.jpg" alt="Juntos, por um futuro melhor!">
-            
-            <div class="impact-cards">
-               
-                <div class="card">
+    <section class="about">
+      <h2>Como Funciona</h2>
+      <p>
+        A ONG <strong>Mão Amiga</strong> desenvolve projetos voltados ao apoio de famílias em situação de vulnerabilidade social.
+        A iniciativa oferece doações de alimentos, roupas e materiais de higiene, além de promover cursos profissionalizantes
+        e atividades educativas que incentivam a autonomia e a inclusão social.
+      </p>
+      <img src="preto-e-branco-maos-humanas-no-aperto-de-mao_101731-220.jpg" alt="Duas mãos se cumprimentando em sinal de parceria">
+    </section>
 
-                    <div class="card-icons"></div>
+    <section class="impact-cards">
+      <h2>Impacto Social</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>+200 Famílias Ajudadas</h3>
+          <p>Distribuição contínua de alimentos e roupas.</p>
+        </article>
+        <article class="card">
+          <h3>+50 Voluntários Ativos</h3>
+          <p>Unidos para promover solidariedade e inclusão.</p>
+        </article>
+        <article class="card">
+          <h3>10 Cursos Profissionalizantes</h3>
+          <p>Capacitando para novas oportunidades.</p>
+        </article>
+      </div>
+    </section>
 
-               </div>
+    <section class="contact">
+      <h2>Fale Conosco</h2>
+      <address>
+        <p>📍 Rua das Pedras, 123 - Florianópolis/SC</p>
+        <p>📞 (99) 99999-9999</p>
+        <p>💬 contato@doacoes.org.br</p>
+      </address>
+    </section>
+  </main>
 
-            </div>
-        </section>
-        <section class="contact">
-            <h2>Fale Conosco!</h2>
-            <address>
-                <p>&#x1F4CD <strong>Endereço: </strong>Rua Das Pedras, 123 - Bairro: Teste, Florinópolis</p>
-            </address>
-            <h3>Ajude nos como voluntario ou por meio de doações!</h3>
-            <p>Doações por pix pela chave contato@doacoes.org.br</p>
-            <p>Ou entre em contato pelo telefone (99)99999-9999 para mais informações</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 organização de voluntarios. Todos os direitos reservados!</p>
-    </footer>
-    
+  <footer>
+    <p>&copy; 2025 Organização de Voluntários. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
